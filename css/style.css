@@ -1,0 +1,417 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    position: relative;
+}
+.img-header{
+    width: 180px;
+    height: 80px;
+    margin-top: 25px;
+    margin-left: 120px;
+    float: left;
+}
+header ul li{
+    list-style: none;
+    display: inline;
+    float: left;
+    margin-left: 60px;
+    font-size: 18px;
+    margin-top: 55px;
+    position: relative;
+}
+header ul a{
+    color: rgb(137, 102, 102);
+}
+header ul a li::after{
+    content: " ";
+    position: absolute;
+    top: -10;
+    left: -10;
+    width: 125%;
+    height: 180%;
+    border: 2px solid rgb(91, 52, 4);
+    border-top: transparent;
+    border-bottom: transparent;
+    transform: scaley(0);
+    transform-origin: center;
+    transition: transform 1s;
+    transition: 0.5s;
+}
+header ul a li:hover::after{
+    transform: scaley(1);
+}
+header ul a li:hover::before{
+    content: " ";
+    position: absolute;
+    top: -10;
+    left: -10;
+    width: 125.89%;
+    height: 180.89%;
+    border: 2px solid rgb(91, 52, 4);
+    border-left: transparent;
+    border-right: transparent;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+header ul a li:hover::before{
+    transform: scaleX(1);
+}
+table{
+    border: 2px solid rgb(27, 9, 9);
+    line-height: 27px;
+    font-size: 20px;
+    padding: 30px;
+    z-index: 3;
+    position: absolute;
+    background-color: rgb(255, 254, 252);
+    visibility: hidden;
+    transform: translate(-9px , 15px);
+    transition: 0.3s;
+}
+.a1:hover table{
+    visibility: visible;
+}
+.th1 , .th3{
+    border-bottom: 2px dotted black;
+}
+.td2{
+    padding-left: 45px;
+    padding-right: 45px;
+}
+header i{
+    margin-left: 30px;
+    font-size: 28px;
+    margin-top: 55px;
+}
+.fa-magnifying-glass{
+    margin-left: 90px;
+}
+.fa-magnifying-glass .fa-user{
+    margin-top: 55px;
+}
+.div0{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(137, 102, 102);
+    margin-right: 160px;
+    font-size: 13px;
+    padding-left: 3px;
+    padding-top: 4px;
+    margin-top: -5px;
+    float: right;
+}
+/* ************************************************************************************************************************ */
+.section1{
+    width: 1250px;
+    height: 550px;
+    background-image: url(../images/Kitchen-Materials-_-Cover-ar14032024.jpg);
+    margin: auto;
+    background-repeat: no-repeat;
+}
+.section1-h2{
+    font-size: 45px;
+    padding-top: 130px;
+    margin-left: 170px;
+    color: black;
+    text-shadow: 7px 7px 9px rgb(24, 20, 20);
+}
+.section1-h2:hover , .section1-btn:hover{
+    color: rgb(97, 74, 74);
+}
+.section1-btn{
+    margin-left: 170px;
+    font-size: 25px;
+    margin-top: -25px;
+    box-shadow: 5px 5px 10px 1px rgb(17, 11, 11);
+}
+/* ************************************************************************************************************************ */
+.section2-h2{
+    text-align: center;
+    font-size: 40px;
+}
+.section2-div1{
+    width: 120px;
+    height: 3px;
+    background-color: rgb(137, 102, 102);
+    margin: auto;
+    margin-top: -20px;
+    transition: 1.5s;
+}
+.section2-div1:hover{
+    transform: scale(1.5 , 1);
+}
+.section2-parent1{
+    width: 1250px;
+    height: 435px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.parent1-img1{
+    width: 300px;
+    height: 350px;
+}
+.parent1-div1{
+    margin-left: 10px;
+}
+.parent1-p1{
+    color: rgb(149, 143, 143);
+}
+.parent1-h21{
+    display: inline;
+    font-size: 20px;
+}
+.fa-chevron-right{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(137, 102, 102);
+    text-align: center;
+    padding-top: 7.5px;
+    color: aliceblue;
+    margin-left: 30px;
+    visibility: hidden;
+    margin-top: -50px;
+}
+.parent1-div1:hover .fa-chevron-right{
+    visibility: visible;
+    color: aliceblue;
+}
+.section2-parent2{
+    width: 1250px;
+    height: 270px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.parent2-div1{
+    width: 620px;
+    height: 270px;
+    background-color: rgb(222, 214, 204);
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#fa-solid2{
+    font-size: 60px;
+    color: rgb(110, 87, 69);
+}
+.parent2-h21{
+    display: inline;
+}
+.parent2-p1{
+    margin-top: -4px;
+    font-size: 17px;
+}
+.div00{
+    margin-top: -50px;
+    padding-left: 58px;
+}
+.parent2-span1{
+    font-size: 17px;
+}
+.div000{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 30px;
+}
+.parent2-div{
+    width: 50px;
+    height: 2px;
+    background-color: rgb(110, 87, 69);
+    margin-top: 45px;
+    margin-left: 13px;
+}
+.parent2-div2{
+    width: 290px;
+    height: 270px;
+    background-image: url(../images/WhatsApp\ Image\ 2024-09-29\ at\ 10.26.00\ PM.jpeg);
+    margin-left: 25px;
+    background-size: cover;
+    transition: 1s;
+}
+.parent2-div3{
+    width: 290px;
+    height: 270px;
+    background-image: url(../images/WhatsApp\ Image\ 2024-09-29\ at\ 10.25.56\ PM.jpeg);
+    margin-left: 25px;
+    background-size: cover;
+    transition: 1s;
+}
+.parent2-div2:hover , .parent2-div3:hover{
+    transform: scale(1.1 , 1.1);
+}
+.parent2-p2{
+    color: rgb(142, 75, 8);
+    padding-left: 27px;
+    font-size: 18px;
+}
+.parent2-h22{
+    color: rgb(59, 45, 31);
+    padding-left: 27px;
+    margin-top: -13px;
+}
+.section2-parent3{
+    width: 1250px;
+    height: 150px;
+    margin: auto;
+    margin-top: 15px;
+    position: relative;
+    padding-left: 17px;
+}
+.parent3-div1 , .parent3-div2 , .parent3-div3 , .parent3-div4 , .parent3-div5{
+    width: 220px;
+    height: 150px;
+    float: left;
+    margin-left: 20px;
+    background-image: url(../images/WhatsApp\ Image\ 2024-10-02\ at\ 10.49.48\ PM.jpeg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-position: top;
+    transition: 0.5s;
+}
+.parent3-div1:hover , .parent3-div2:hover , .parent3-div3:hover , .parent3-div4:hover , .parent3-div5:hover{
+    background-position: 50% -850%;
+}
+#parent3-div2{
+    background-image: url(../images/WhatsApp\ Image2\ 2024-10-02\ at\ 10.17.26\ PM.jpeg);
+    background-position: 50% 28%;
+    transition: 0.5s;
+}
+#parent3-div2:hover{
+    background-position: 50% 280%;
+}
+#parent3-div3{
+    background-image: url(../images/WhatsApp\ Image3\ 2024-10-02\ at\ 10.17.26\ PM.jpeg);
+    background-position: 50% 125%;
+    transition: 0.5s;
+}
+#parent3-div3:hover{
+    background-position: 50% 510%;
+} 
+#parent3-div4{
+    background-image: url(../images/WhatsApp\ Image4\ 2024-10-02\ at\ 10.17.26\ PM.jpeg);
+    background-position: 50% 95%;
+    transition: 0.5s;
+}
+#parent3-div4:hover{
+    background-position: 50% 530%;
+} 
+#parent3-div5{
+    background-image: url(../images/WhatsApp\ Image5\ 2024-10-02\ at\ 10.17.26\ PM.jpeg);
+    background-position: 50% -125%;
+    transition: 0.5s;
+}
+#parent3-div5:hover{
+    background-position: 50% -1150%;
+} 
+.parent3-div10{
+    background-color: white;
+    text-align: center;
+    margin-top: 50px;
+    height: 90px;
+}
+.parent3-div10-h2{
+    font-size: 20px;
+}
+.parent3-div10-p{
+    font-size: 15px;
+    margin-top: -12px;
+    color: rgb(149, 143, 143);
+}
+.parent3-div{
+    width: 1px;
+    height: 100px;
+    background-color: rgb(137, 102, 102);
+    float: left;
+}
+.lastdiv{
+    width: 1250px;
+    height: 1px;
+    background-color: rgb(137, 102, 102);
+    margin: auto;
+}
+/* ************************************************************************************************************************ */
+.section3-parent1{
+    position: relative;
+    padding-left: 82px;
+    padding-top: 25px;   
+}
+.section3-parent1-div1{
+    float: left;
+    margin-left: 50px;
+}
+.section3-p{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.section3-parent1-img1{
+    width: 380px;
+    height: 400px;
+    display: block;
+}
+.fa-star{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+#fa-solid1 {
+    color: yellow;
+}
+.section3-parent1-p{
+    margin-top: -0.1px;
+    font-size: 18px;
+}
+.section3-parent1-h2{
+    margin-top: -15px;
+    font-size: 20px;
+}
+.section3-parent1-div2{
+    position: relative;
+}
+.section3-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image: url(../images/WhatsApp\ Image\ 2024-09-29\ at\ 10.25.52\ PM.jpeg);
+    background-size: cover;
+    visibility: hidden;
+    opacity: 0;
+}
+#section3-overlay2{
+    background-image: url(../images/WhatsApp\ Image\ 2024-09-29\ at\ 10.25.48\ PM.jpeg);
+}
+#section3-overlay3{
+    background-image: url(../images/WhatsApp\ Image\ 2024-09-29\ at\ 10.25.49\ PM.jpeg);
+}
+#section3-overlay4{
+    background-image: url(../images/WhatsApp\ Image\ 2024-09-29\ at\ 10.25.52\ PM\ \(1\).jpeg);
+}
+#section3-overlay5{
+    background-image: url(../images/WhatsApp\ Image\ 2024-09-29\ at\ 10.25.54\ PM.jpeg);
+}
+#section3-overlay6{
+    background-image: url(../images/WhatsApp\ Image\ 2024-09-29\ at\ 10.25.56\ PM.jpeg);
+}
+.fa-facebook-f , .fa-twitter , .fa-linkedin , .fa-instagram{
+    width: 35px;
+    height: 35px;
+    background-color: azure;
+    text-align: center;
+    padding-top: 8px;
+    margin-top: 190px;
+}
+.section3-parent1-div1:hover .section3-overlay{
+    visibility: visible;
+    opacity: 0.8;
+}
